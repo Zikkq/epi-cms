@@ -10,8 +10,16 @@ Prerequisities
 - .NET SDK 6+
 - SQL Server (I've used 2022)
 
+Install WebSockets windows feature(Internet Information Services -> World Wide Web Services)
 
-Before ```dotnet run``` you should create database via next script
+To create empty template use next
+```
+dotnet new epi-cms-empty
+```
+
+call with -h flag to see additional info
+
+To create database use next script
 ```
 dotnet-episerver create-cms-database `
 -S <sql-server-instance name> `
